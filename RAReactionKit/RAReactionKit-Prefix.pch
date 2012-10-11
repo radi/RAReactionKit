@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'RAReactionKit' target in the 'RAReactionKit' project
+//
+
+#ifdef __OBJC__
+	#import <Foundation/Foundation.h>
+#endif
