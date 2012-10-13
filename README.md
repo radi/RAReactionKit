@@ -31,7 +31,7 @@ There are currently two options keys:
 
 *	**RABindingsValueTransformerOption**: You can pass a `RABindingsValueTransformer` block:
 
-		typedef id (^RABindingsValueTransformer) (id inOldValue, id 	inNewValue, NSString *changeKind);
+		typedef id (^RABindingsValueTransformer) (NSDictionary *change, NSKeyValueChange kind, id fromValue, id toValue);
 	
 	This allows you to do some very cheap value transforming, for example between `NSDate` and `NSString`.
 

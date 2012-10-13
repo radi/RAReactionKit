@@ -10,7 +10,7 @@
 
 extern NSString * const RABindingsMainQueueGravityOption;	//	if -isEqual:kCFBooleanTrue, dispatch_async on main queue if ![NSThread isMainThread]
 extern NSString * const RABindingsValueTransformerOption;	//	If given block, runs value thru block
-typedef id (^RABindingsValueTransformer) (id inOldValue, id inNewValue, NSString *changeKind);
+typedef id (^RABindingsValueTransformer) (NSDictionary *change, NSKeyValueChange kind, id fromValue, id toValue);
 
 @interface NSObject (RABindings)
 

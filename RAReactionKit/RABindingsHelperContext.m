@@ -114,12 +114,13 @@
 
 	id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
 	id newValue = [change objectForKey:NSKeyValueChangeNewKey];
-	NSString *changeKind = [change objectForKey:NSKeyValueChangeKindKey];
+	NSNumber *changeKindValue = [change objectForKey:NSKeyValueChangeKindKey];
+	NSKeyValueChange changeKind = [changeKindValue unsignedIntegerValue];
 	id setValue = newValue;
 		
 	RABindingsValueTransformer valueTransformerOrNil = self.valueTransformer;
 	if (valueTransformerOrNil)
-		setValue = valueTransformerOrNil(oldValue, newValue, changeKind);
+		setValue = valueTransformerOrNil(change, changeKind, oldValue, newValue);
 	
 	BOOL assignmentOnMainThread = self.assignsOnMainThread;
 
