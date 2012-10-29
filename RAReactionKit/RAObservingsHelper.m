@@ -6,24 +6,35 @@
 //  Copyright (c) 2012 Radius. All rights reserved.
 //
 
+#import "RALifetimeHelper.h"
 #import "RAObservingsHelper.h"
 
 @implementation RAObservingsHelper
 
-@synthesize owner, callback, observedKeyPath, context;
-@synthesize lastOldValue, lastNewValue;
+@synthesize owner = _owner;
+@synthesize callback = _callback;
+@synthesize observedKeyPath = _observedKeyPath;
+@synthesize context = _context;
+@synthesize lastOldValue = _lastOldValue;
+@synthesize lastNewValue = _lastNewValue;
 
 - (id) initWithObserverBlock:(RAObservingsCallback)block withOwner:(id)inOwner keyPath:(NSString *)keyPath options:(NSKeyValueObservingOptions)options context:(void *)inContext {
 
 	self = [super init];
-	if (!self) return nil;
+	if (!self)
+		return nil;
 	
-	self.owner = inOwner;
-	self.observedKeyPath = keyPath;
-	self.callback = block;
-	self.context = inContext;
+	_owner = inOwner;
+	_observedKeyPath = keyPath;
+	_callback = block;
+	_context = inContext;
 	
-	[self.owner addObserver:self forKeyPath:keyPath options:options context:inContext];
+	__weak typeof(self) wSelf = self;
+	
+	[_owner addObserver:self forKeyPath:keyPath options:options context:inContext];
+	[_owner ra_performOnDeallocation:^{
+		[wSelf kill];
+	}];
 	
 	return self;
 
@@ -31,16 +42,14 @@
 
 - (void) observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
 
-	id oldValue = [change objectForKey:NSKeyValueChangeOldKey];
-	id newValue = [change objectForKey:NSKeyValueChangeNewKey];
+	id oldValue = change[NSKeyValueChangeOldKey];
+	id newValue = change[NSKeyValueChangeNewKey];
 	
 	if ((self.lastOldValue != (__bridge void *)(oldValue)) || (self.lastNewValue != (__bridge void *)(newValue))) {
 	
-		NSKeyValueChange changeKind = NSKeyValueChangeSetting;
-		NSIndexSet *indices = [change objectForKey:NSKeyValueChangeIndexesKey];
-		BOOL isPrior = [[change objectForKey:NSKeyValueChangeNotificationIsPriorKey] isEqual:(id)kCFBooleanTrue];
-		
-		[[change objectForKey:NSKeyValueChangeKindKey] getValue:&changeKind];
+		NSKeyValueChange changeKind = [change[NSKeyValueChangeKindKey] unsignedIntegerValue];
+		NSIndexSet *indices = change[NSKeyValueChangeIndexesKey];
+		BOOL isPrior = [change[NSKeyValueChangeNotificationIsPriorKey] boolValue];
 		
 		id sentOldValue = [oldValue isEqual:[NSNull null]] ? nil : oldValue;
 		id sentNewValue = [newValue isEqual:[NSNull null]] ? nil : newValue;
@@ -57,8 +66,8 @@
 
 - (void) kill {
 
-	if (owner && observedKeyPath)
-		[owner removeObserver:self forKeyPath:observedKeyPath];
+	if (_owner && _observedKeyPath)
+		[_owner removeObserver:self forKeyPath:_observedKeyPath context:_context];
 	
 	self.owner = nil;
 	self.observedKeyPath = nil;
