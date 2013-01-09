@@ -52,7 +52,7 @@
 	__weak id wTarget = target;
 	
 	[wSelf ra_performOnDeallocation:^{
-	
+		
 		if (wHelper) {
 			[wTarget ra_removeObservingsHelper:wHelper];
 		}

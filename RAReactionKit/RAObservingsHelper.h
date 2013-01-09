@@ -13,7 +13,7 @@
 
 - (id) initWithObserverBlock:(RAObservingsCallback)block withOwner:(id)owner keyPath:(NSString *)keypath options:(NSKeyValueObservingOptions)options context:(void *)context;
 
-@property (nonatomic, readwrite, assign) id owner;
+@property (nonatomic, readwrite, unsafe_unretained) id owner;
 @property (nonatomic, readwrite, copy) RAObservingsCallback callback;
 @property (nonatomic, readwrite, copy) NSString *observedKeyPath;
 @property (nonatomic, readwrite, assign) void *context;

@@ -13,6 +13,6 @@
 
 + (id) helperWithDeallocationCallback:(void(^)(void))aBlock;
 @property (nonatomic, readwrite, copy) void (^deallocationCallback)(void);
-@property (nonatomic, readwrite, assign) id owner;
+@property (nonatomic, readwrite, weak) id owner;
 
 @end

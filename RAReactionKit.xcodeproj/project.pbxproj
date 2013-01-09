@@ -7,11 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF118BDA169D5E7B00069F91 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF118BD9169D5E7B00069F91 /* SenTestingKit.framework */; };
+		FF118BDC169D5E7B00069F91 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF118BDB169D5E7B00069F91 /* UIKit.framework */; };
+		FF118BDD169D5E7B00069F91 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF652A316265F07003191EC /* Foundation.framework */; };
+		FF118BE3169D5E7B00069F91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FF118BE1169D5E7B00069F91 /* InfoPlist.strings */; };
+		FF118BE6169D5E7B00069F91 /* RAReactionKitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = FF118BE5169D5E7B00069F91 /* RAReactionKitTest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		FF9586571626636300DB89D9 /* RAObservingsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9586561626636300DB89D9 /* RAObservingsHelper.m */; };
 		FF95865A162663F500DB89D9 /* NSObject+RAObservingsPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = FF958659162663F500DB89D9 /* NSObject+RAObservingsPrivate.m */; };
 		FF9586601626644300DB89D9 /* NSObject+RAObservings.m in Sources */ = {isa = PBXBuildFile; fileRef = FF95865F1626644300DB89D9 /* NSObject+RAObservings.m */; };
 		FF95866C162665CE00DB89D9 /* NSObject+RALifetimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FF95866B162665CE00DB89D9 /* NSObject+RALifetimeHelper.m */; };
 		FF9586731626672F00DB89D9 /* NSObject+RABindings.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9586721626672F00DB89D9 /* NSObject+RABindings.m */; };
+		FFB5011E169D5F13003E95FB /* RAReactionKitTestObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB5011D169D5F13003E95FB /* RAReactionKitTestObject.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FFB5011F169D5FF1003E95FB /* libRAReactionKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF652A016265F07003191EC /* libRAReactionKit.a */; };
+		FFB50127169D64C7003E95FB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF118BDB169D5E7B00069F91 /* UIKit.framework */; };
+		FFB50128169D64C7003E95FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF652A316265F07003191EC /* Foundation.framework */; };
+		FFB5012A169D64C7003E95FB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB50129169D64C7003E95FB /* CoreGraphics.framework */; };
+		FFB50130169D64C7003E95FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FFB5012E169D64C7003E95FB /* InfoPlist.strings */; };
+		FFB50132169D64C7003E95FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB50131169D64C7003E95FB /* main.m */; };
+		FFB50136169D64C7003E95FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FFB50135169D64C7003E95FB /* AppDelegate.m */; };
+		FFB50138169D64C7003E95FB /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB50137169D64C7003E95FB /* Default.png */; };
+		FFB5013A169D64C7003E95FB /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB50139169D64C7003E95FB /* Default@2x.png */; };
+		FFB5013C169D64C7003E95FB /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFB5013B169D64C7003E95FB /* Default-568h@2x.png */; };
 		FFF652A416265F07003191EC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFF652A316265F07003191EC /* Foundation.framework */; };
 		FFF652A916265F07003191EC /* RAReactionKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FFF652A816265F07003191EC /* RAReactionKit.h */; };
 		FFF652AB16265F07003191EC /* RAReactionKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF652AA16265F07003191EC /* RAReactionKit.m */; };
@@ -21,6 +37,23 @@
 		FFF652F51626608E003191EC /* RAObservings.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF652F11626608E003191EC /* RAObservings.m */; };
 		FFF652F9162660F5003191EC /* RALifetimeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = FFF652F8162660F5003191EC /* RALifetimeHelper.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FFB50120169D5FF6003E95FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF6529716265F07003191EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFF6529F16265F07003191EC;
+			remoteInfo = RAReactionKit;
+		};
+		FFB50140169D64D5003E95FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFF6529716265F07003191EC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FFB50125169D64C7003E95FB;
+			remoteInfo = RAReactionKitTestHostApp;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		FFF6529E16265F07003191EC /* CopyFiles */ = {
@@ -36,6 +69,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF118BD8169D5E7B00069F91 /* RAReactionKitTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RAReactionKitTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF118BD9169D5E7B00069F91 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF118BDB169D5E7B00069F91 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		FF118BE0169D5E7B00069F91 /* RAReactionKitTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAReactionKitTest-Info.plist"; sourceTree = "<group>"; };
+		FF118BE2169D5E7B00069F91 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FF118BE4169D5E7B00069F91 /* RAReactionKitTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RAReactionKitTest.h; sourceTree = "<group>"; };
+		FF118BE5169D5E7B00069F91 /* RAReactionKitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RAReactionKitTest.m; sourceTree = "<group>"; };
+		FF118BE7169D5E7B00069F91 /* RAReactionKitTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAReactionKitTest-Prefix.pch"; sourceTree = "<group>"; };
 		FF9586551626636300DB89D9 /* RAObservingsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RAObservingsHelper.h; path = RAReactionKit/RAObservingsHelper.h; sourceTree = "<group>"; };
 		FF9586561626636300DB89D9 /* RAObservingsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RAObservingsHelper.m; path = RAReactionKit/RAObservingsHelper.m; sourceTree = "<group>"; };
 		FF958658162663F500DB89D9 /* NSObject+RAObservingsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+RAObservingsPrivate.h"; path = "RAReactionKit/NSObject+RAObservingsPrivate.h"; sourceTree = "<group>"; };
@@ -46,6 +87,19 @@
 		FF95866B162665CE00DB89D9 /* NSObject+RALifetimeHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RALifetimeHelper.m"; path = "RAReactionKit/NSObject+RALifetimeHelper.m"; sourceTree = "<group>"; };
 		FF9586711626672F00DB89D9 /* NSObject+RABindings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+RABindings.h"; path = "RAReactionKit/NSObject+RABindings.h"; sourceTree = "<group>"; };
 		FF9586721626672F00DB89D9 /* NSObject+RABindings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+RABindings.m"; path = "RAReactionKit/NSObject+RABindings.m"; sourceTree = "<group>"; };
+		FFB5011C169D5F13003E95FB /* RAReactionKitTestObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAReactionKitTestObject.h; sourceTree = "<group>"; };
+		FFB5011D169D5F13003E95FB /* RAReactionKitTestObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAReactionKitTestObject.m; sourceTree = "<group>"; };
+		FFB50126169D64C7003E95FB /* RAReactionKitTestHostApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAReactionKitTestHostApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FFB50129169D64C7003E95FB /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		FFB5012D169D64C7003E95FB /* RAReactionKitTestHostApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RAReactionKitTestHostApp-Info.plist"; sourceTree = "<group>"; };
+		FFB5012F169D64C7003E95FB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FFB50131169D64C7003E95FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FFB50133169D64C7003E95FB /* RAReactionKitTestHostApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAReactionKitTestHostApp-Prefix.pch"; sourceTree = "<group>"; };
+		FFB50134169D64C7003E95FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FFB50135169D64C7003E95FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FFB50137169D64C7003E95FB /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		FFB50139169D64C7003E95FB /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		FFB5013B169D64C7003E95FB /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		FFF652A016265F07003191EC /* libRAReactionKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRAReactionKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF652A316265F07003191EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FFF652A716265F07003191EC /* RAReactionKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RAReactionKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -64,6 +118,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF118BD4169D5E7B00069F91 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB5011F169D5FF1003E95FB /* libRAReactionKit.a in Frameworks */,
+				FF118BDD169D5E7B00069F91 /* Foundation.framework in Frameworks */,
+				FF118BDA169D5E7B00069F91 /* SenTestingKit.framework in Frameworks */,
+				FF118BDC169D5E7B00069F91 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB50123169D64C7003E95FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB50127169D64C7003E95FB /* UIKit.framework in Frameworks */,
+				FFB50128169D64C7003E95FB /* Foundation.framework in Frameworks */,
+				FFB5012A169D64C7003E95FB /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF6529D16265F07003191EC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -75,6 +150,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF118BDE169D5E7B00069F91 /* RAReactionKitTest */ = {
+			isa = PBXGroup;
+			children = (
+				FF118BE4169D5E7B00069F91 /* RAReactionKitTest.h */,
+				FF118BE5169D5E7B00069F91 /* RAReactionKitTest.m */,
+				FFB5011C169D5F13003E95FB /* RAReactionKitTestObject.h */,
+				FFB5011D169D5F13003E95FB /* RAReactionKitTestObject.m */,
+				FF118BDF169D5E7B00069F91 /* Supporting Files */,
+			);
+			path = RAReactionKitTest;
+			sourceTree = "<group>";
+		};
+		FF118BDF169D5E7B00069F91 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FF118BE0169D5E7B00069F91 /* RAReactionKitTest-Info.plist */,
+				FF118BE1169D5E7B00069F91 /* InfoPlist.strings */,
+				FF118BE7169D5E7B00069F91 /* RAReactionKitTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FFB5012B169D64C7003E95FB /* RAReactionKitTestHostApp */ = {
+			isa = PBXGroup;
+			children = (
+				FFB50134169D64C7003E95FB /* AppDelegate.h */,
+				FFB50135169D64C7003E95FB /* AppDelegate.m */,
+				FFB5012C169D64C7003E95FB /* Supporting Files */,
+			);
+			path = RAReactionKitTestHostApp;
+			sourceTree = "<group>";
+		};
+		FFB5012C169D64C7003E95FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FFB5012D169D64C7003E95FB /* RAReactionKitTestHostApp-Info.plist */,
+				FFB5012E169D64C7003E95FB /* InfoPlist.strings */,
+				FFB50131169D64C7003E95FB /* main.m */,
+				FFB50133169D64C7003E95FB /* RAReactionKitTestHostApp-Prefix.pch */,
+				FFB50137169D64C7003E95FB /* Default.png */,
+				FFB50139169D64C7003E95FB /* Default@2x.png */,
+				FFB5013B169D64C7003E95FB /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FFF6529516265F07003191EC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +204,8 @@
 				FFF652FA16266104003191EC /* Bindings */,
 				FFF652FB1626610B003191EC /* Observings */,
 				FFF652FC16266111003191EC /* Helpers */,
+				FF118BDE169D5E7B00069F91 /* RAReactionKitTest */,
+				FFB5012B169D64C7003E95FB /* RAReactionKitTestHostApp */,
 				FFF652A216265F07003191EC /* Frameworks */,
 				FFF652A116265F07003191EC /* Products */,
 				FFF652A616265F07003191EC /* Supporting Files */,
@@ -93,6 +216,8 @@
 			isa = PBXGroup;
 			children = (
 				FFF652A016265F07003191EC /* libRAReactionKit.a */,
+				FF118BD8169D5E7B00069F91 /* RAReactionKitTest.octest */,
+				FFB50126169D64C7003E95FB /* RAReactionKitTestHostApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +226,9 @@
 			isa = PBXGroup;
 			children = (
 				FFF652A316265F07003191EC /* Foundation.framework */,
+				FF118BD9169D5E7B00069F91 /* SenTestingKit.framework */,
+				FF118BDB169D5E7B00069F91 /* UIKit.framework */,
+				FFB50129169D64C7003E95FB /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -158,6 +286,43 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF118BD7169D5E7B00069F91 /* RAReactionKitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF118BEA169D5E7B00069F91 /* Build configuration list for PBXNativeTarget "RAReactionKitTest" */;
+			buildPhases = (
+				FF118BD3169D5E7B00069F91 /* Sources */,
+				FF118BD4169D5E7B00069F91 /* Frameworks */,
+				FF118BD5169D5E7B00069F91 /* Resources */,
+				FF118BD6169D5E7B00069F91 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FFB50121169D5FF6003E95FB /* PBXTargetDependency */,
+				FFB50141169D64D5003E95FB /* PBXTargetDependency */,
+			);
+			name = RAReactionKitTest;
+			productName = RAReactionKitTest;
+			productReference = FF118BD8169D5E7B00069F91 /* RAReactionKitTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+		FFB50125169D64C7003E95FB /* RAReactionKitTestHostApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FFB5013D169D64C7003E95FB /* Build configuration list for PBXNativeTarget "RAReactionKitTestHostApp" */;
+			buildPhases = (
+				FFB50122169D64C7003E95FB /* Sources */,
+				FFB50123169D64C7003E95FB /* Frameworks */,
+				FFB50124169D64C7003E95FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RAReactionKitTestHostApp;
+			productName = RAReactionKitTestHostApp;
+			productReference = FFB50126169D64C7003E95FB /* RAReactionKitTestHostApp.app */;
+			productType = "com.apple.product-type.application";
+		};
 		FFF6529F16265F07003191EC /* RAReactionKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFF652AE16265F07003191EC /* Build configuration list for PBXNativeTarget "RAReactionKit" */;
@@ -197,11 +362,69 @@
 			projectRoot = "";
 			targets = (
 				FFF6529F16265F07003191EC /* RAReactionKit */,
+				FF118BD7169D5E7B00069F91 /* RAReactionKitTest */,
+				FFB50125169D64C7003E95FB /* RAReactionKitTestHostApp */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		FF118BD5169D5E7B00069F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF118BE3169D5E7B00069F91 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB50124169D64C7003E95FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB50130169D64C7003E95FB /* InfoPlist.strings in Resources */,
+				FFB50138169D64C7003E95FB /* Default.png in Resources */,
+				FFB5013A169D64C7003E95FB /* Default@2x.png in Resources */,
+				FFB5013C169D64C7003E95FB /* Default-568h@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FF118BD6169D5E7B00069F91 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		FF118BD3169D5E7B00069F91 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF118BE6169D5E7B00069F91 /* RAReactionKitTest.m in Sources */,
+				FFB5011E169D5F13003E95FB /* RAReactionKitTestObject.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FFB50122169D64C7003E95FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFB50132169D64C7003E95FB /* main.m in Sources */,
+				FFB50136169D64C7003E95FB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFF6529C16265F07003191EC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,7 +445,116 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FFB50121169D5FF6003E95FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFF6529F16265F07003191EC /* RAReactionKit */;
+			targetProxy = FFB50120169D5FF6003E95FB /* PBXContainerItemProxy */;
+		};
+		FFB50141169D64D5003E95FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FFB50125169D64C7003E95FB /* RAReactionKitTestHostApp */;
+			targetProxy = FFB50140169D64D5003E95FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF118BE1169D5E7B00069F91 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF118BE2169D5E7B00069F91 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FFB5012E169D64C7003E95FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FFB5012F169D64C7003E95FB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		FF118BE8169D5E7B00069F91 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RAReactionKitTestHostApp.app/RAReactionKitTestHostApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAReactionKitTest/RAReactionKitTest-Prefix.pch";
+				INFOPLIST_FILE = "RAReactionKitTest/RAReactionKitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		FF118BE9169D5E7B00069F91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RAReactionKitTestHostApp.app/RAReactionKitTestHostApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAReactionKitTest/RAReactionKitTest-Prefix.pch";
+				INFOPLIST_FILE = "RAReactionKitTest/RAReactionKitTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+		FFB5013E169D64C7003E95FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAReactionKitTestHostApp/RAReactionKitTestHostApp-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "RAReactionKitTestHostApp/RAReactionKitTestHostApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FFB5013F169D64C7003E95FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode46-DP4.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RAReactionKitTestHostApp/RAReactionKitTestHostApp-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = "RAReactionKitTestHostApp/RAReactionKitTestHostApp-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		FFF652AC16265F07003191EC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -245,8 +577,11 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -267,7 +602,10 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -307,6 +645,23 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF118BEA169D5E7B00069F91 /* Build configuration list for PBXNativeTarget "RAReactionKitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF118BE8169D5E7B00069F91 /* Debug */,
+				FF118BE9169D5E7B00069F91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FFB5013D169D64C7003E95FB /* Build configuration list for PBXNativeTarget "RAReactionKitTestHostApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FFB5013E169D64C7003E95FB /* Debug */,
+				FFB5013F169D64C7003E95FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		FFF6529A16265F07003191EC /* Build configuration list for PBXProject "RAReactionKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

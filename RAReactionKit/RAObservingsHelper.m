@@ -66,6 +66,8 @@
 
 - (void) kill {
 
+	NSLog(@"%p %s; _owner %p; _observedKeyPath %p; _callback %p", self, __PRETTY_FUNCTION__, _owner, _observedKeyPath, _callback);
+
 	if (_owner && _observedKeyPath)
 		[_owner removeObserver:self forKeyPath:_observedKeyPath context:_context];
 	
